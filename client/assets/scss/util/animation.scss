@@ -1,0 +1,15 @@
+// fade slide
+.page-enter-active,
+.page-leave-active {
+  transition: all 0.2s ease;
+  transform: translate(0, 0);
+}
+
+.page-enter {
+  transform: translate(0, 6px);
+  opacity: 0;
+}
+.page-leave-active {
+  transform: translate(0, -6px);
+  opacity: 0;
+}

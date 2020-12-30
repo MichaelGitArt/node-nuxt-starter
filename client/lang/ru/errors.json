@@ -1,0 +1,12 @@
+{
+  "validation": {
+    "WRONG_LENGTH": "Длина поля {field} не верна",
+    "UNSUPPORTED_SYMBOLS": "Поле {field} содержит недопустимые символы",
+    "NOT_UNIQUE": "Уже занято. Введите другое значение"
+  },
+
+  "UNEXPECTED_ERROR": "Что-то пошло не так",
+  "UNAUTHORIZED_ERROR": "Ошибка авторизации",
+  "FORBIDDEN_ERROR": "У вас нет разрешения",
+  "NOT_FOUND_ERROR": "Ресурс не найден"
+}

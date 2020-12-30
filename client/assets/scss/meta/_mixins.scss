@@ -1,0 +1,22 @@
+@mixin disable-selection {
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+}
+
+// @media #{map-get($display-breakpoints, 'xl-only')} {
+// }
+
+// @media #{map-get($display-breakpoints, 'lg-and-down')} {
+// }
+
+// @media #{map-get($display-breakpoints, 'md-and-down')} {
+// }
+
+// @media #{map-get($display-breakpoints, 'sm-and-down')} {
+// }
+
+// @media #{map-get($display-breakpoints, 'xs-only')} {
+// }

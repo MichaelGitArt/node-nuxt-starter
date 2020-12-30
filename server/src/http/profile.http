@@ -1,0 +1,21 @@
+
+@hostname = {{$dotenv SERVER_DOMAIN}}
+@port = {{$dotenv PORT}}
+@host = {{hostname}}:{{port}}
+@contentType = application/json
+@tempAccessToken = {{$dotenv TEMP_ACCESS_TOKEN}}
+
+### [GET] Base profile info
+GET http://{{host}}/profile/base
+content-type: {{contentType}}
+Cookie: accessToken={{tempAccessToken}}
+
+
+### [POST] Base profile info
+POST http://{{host}}/profile/check-nickname
+content-type: {{contentType}}
+Cookie: accessToken={{tempAccessToken}}
+
+{
+	"nickname": "valid-nickname" 
+}

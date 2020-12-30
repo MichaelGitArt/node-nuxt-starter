@@ -1,0 +1,16 @@
+
+@hostname = {{$dotenv SERVER_DOMAIN}}
+@port = {{$dotenv PORT}}
+@host = {{hostname}}:{{port}}
+@contentType = application/json
+@tempAccessToken = {{$dotenv TEMP_ACCESS_TOKEN}}
+
+# GET oauth 2 routes
+# /google
+# /google/callback
+# /telegram
+
+### [GET] User logout
+POST http://{{host}}/auth/logout
+content-type: {{contentType}}
+Cookie: accessToken={{tempAccessToken}}

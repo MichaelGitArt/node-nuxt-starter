@@ -4,7 +4,7 @@
       <v-col class="subtitle-1 text-center" cols="12">
         <v-icon color="green" size="200">mdi-account-convert </v-icon>
 
-        <div class="text-h6 mt-8">Завантаження користувача</div>
+        <div class="text-h6 mt-8">{{ $t('title') }}</div>
       </v-col>
       <v-col cols="8" sm="4">
         <v-progress-linear
@@ -26,6 +26,16 @@ export default {
     this.$store.dispatch('auth/fetchUser').then(() => {
       this.$router.push('/');
     });
+  },
+  i18n: {
+    messages: {
+      ru: {
+        title: 'Загрузка пользователя',
+      },
+      uk: {
+        title: 'Завантаження користувача',
+      },
+    },
   },
 };
 </script>
